@@ -1,8 +1,13 @@
 import React from "react";
 import profile from "../imgs/profile.png";
-import { Box, Typography, Avatar } from "@mui/material";
+import { Box, Avatar } from "@mui/material";
 
-const TopElement = ({ username, venueName, profileImage }) => {
+const TopElement = () => {
+  const topElementData = {
+    username: "Username",
+    venue: "VENUE NAME",
+  };
+
   return (
     <Box
       sx={{
@@ -20,13 +25,13 @@ const TopElement = ({ username, venueName, profileImage }) => {
           fontWeight: "600",
           fontSize: "22px",
           color: "#020655",
-          lineHeight: "0.8", // Adjust line height to reduce the gap
+          lineHeight: "0.8", // Adjusted line height to reduce the gap
         }}
       >
-        Hi, {username}
+        Hi, {topElementData.username}
         <br />
         <span style={{ fontWeight: "700", fontSize: "12px", color: "#7D7D7D" }}>
-          {venueName}
+          {topElementData.venueName}
         </span>
       </Box>
       <Box sx={{ position: "relative" }}>

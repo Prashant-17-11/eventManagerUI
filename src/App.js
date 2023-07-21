@@ -6,7 +6,6 @@ import TopElement from "./components/Topelement";
 import OngoingEvents from "./components/OngoingEvents";
 import Footer from "./components/Footer";
 import Event from "./components/Event";
-import { topElementData } from "./data";
 
 function App() {
   const [isLargeScreen, setIsLargeScreen] = useState(true);
@@ -16,11 +15,9 @@ function App() {
       setIsLargeScreen(window.innerWidth > 768);
     };
 
-    // Add event listener to handle screen size changes
     window.addEventListener("resize", handleResize);
-    handleResize(); // Check initial screen size
+    handleResize();
 
-    // Clean up the event listener on component unmount
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -44,11 +41,7 @@ function App() {
                 boxSizing: "border-box",
               }}
             >
-              <TopElement
-                username={topElementData.username}
-                venueName={topElementData.venue}
-                profileImage={topElementData.profileImagePath}
-              />
+              <TopElement />
               <Routes>
                 <Route exact path='/' element={<OngoingEvents />} />
                 <Route exact path='/event' element={<Event />} />
@@ -57,11 +50,7 @@ function App() {
           </>
         ) : (
           <>
-            <TopElement
-              username={topElementData.username}
-              venueName={topElementData.venue}
-              profileImage={topElementData.profileImagePath}
-            />
+            <TopElement />
             <Routes>
               <Route exact path='/' element={<OngoingEvents />} />
               <Route exact path='/event' element={<Event />} />
