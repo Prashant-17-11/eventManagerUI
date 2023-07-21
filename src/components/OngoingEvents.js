@@ -231,10 +231,16 @@ const OngoingEvents = () => {
                         fontSize: "10px",
                         fontWeight: "700",
                         textTransform: "none",
+                        "@media screen and (max-width: 329px)": {
+                          minWidth: "110px",
+                        },
                         "@media screen and (min-width: 330px)": {
                           minWidth: "120px",
                         },
-                        "@media screen and (min-width: 380px)": {
+                        "@media screen and (min-width: 365px)": {
+                          minWidth: "150px",
+                        },
+                        "@media screen and (min-width: 400px)": {
                           minWidth: "186px",
                           fontSize: "12px",
                         },
