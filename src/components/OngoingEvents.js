@@ -214,7 +214,8 @@ const OngoingEvents = () => {
                       height: "32px",
                       padding: "6px",
                     }}
-                    mr={6}
+                    ml={2}
+                    mr={2}
                   >
                     <Notifications sx={{ color: "darkblue" }} />
                     <Typography variant='subtitle1' sx={{ color: "darkblue" }}>
