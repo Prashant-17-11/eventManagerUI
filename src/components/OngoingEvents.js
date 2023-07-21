@@ -222,7 +222,7 @@ const OngoingEvents = () => {
                       {eventData.notificationCount}
                     </Typography>
                   </Box>
-                  <Link to='/event'>
+                  <Link to='/event' sx={{ textDecoration: "none" }}>
                     <Button
                       variant='contained'
                       sx={{
