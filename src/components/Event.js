@@ -83,6 +83,13 @@ const Event = () => {
             borderRadius: "8px",
             fontSize: "14px",
             fontWeight: "500",
+            "@media screen and (max-width: 380px)": {
+              fontSize: "8px",
+              maxWidth: "27vw",
+            },
+            "@media screen and (max-width: 424px)": {
+              fontSize: "12px",
+            },
           }}
         >
           Statistics
@@ -95,6 +102,13 @@ const Event = () => {
             borderRadius: "8px",
             fontSize: "14px",
             fontWeight: "500",
+            "@media screen and (max-width: 380px)": {
+              fontSize: "8px",
+              maxWidth: "27vw",
+            },
+            "@media screen and (max-width: 424px)": {
+              fontSize: "12px",
+            },
           }}
         >
           Event Details
@@ -107,6 +121,13 @@ const Event = () => {
             borderRadius: "8px",
             fontSize: "14px",
             fontWeight: "500",
+            "@media screen and (max-width: 380px)": {
+              fontSize: "8px",
+              maxWidth: "27vw",
+            },
+            "@media screen and (max-width: 424px)": {
+              fontSize: "12px",
+            },
           }}
         >
           Host Details
