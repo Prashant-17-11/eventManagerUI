@@ -231,6 +231,7 @@ const OngoingEvents = () => {
                         fontSize: "10px",
                         fontWeight: "700",
                         textTransform: "none",
+                        textDecoration: "none",
                         "@media screen and (max-width: 329px)": {
                           minWidth: "110px",
                         },
