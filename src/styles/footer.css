@@ -1,0 +1,26 @@
+/* Custom CSS for the Footer component */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+}
+
+.footer-tabs {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.footer-tab {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer-tab:hover {
+  background-color: #e9ecef;
+}

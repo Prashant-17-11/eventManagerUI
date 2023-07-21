@@ -1,0 +1,21 @@
+/* Custom CSS for the left sidebar Navbar */
+.navbar-left-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.navbar-tabs {
+  margin-top: 20px;
+}
+
+.nav-tab {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
